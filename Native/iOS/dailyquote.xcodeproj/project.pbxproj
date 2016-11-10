@@ -112,7 +112,7 @@
 				TargetAttributes = {
 					207DA4911DBD5EEC0001F6CB = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = F8Q38TU8B6;
+						DevelopmentTeam = 8W62GL8FE7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -294,7 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F8Q38TU8B6;
+				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -312,7 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F8Q38TU8B6;
+				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
