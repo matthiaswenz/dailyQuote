@@ -1,5 +1,8 @@
 # dailyQuote
 
+> NEW!
+We are currently building the app with Xamarin to tell the whole cross-plattform story as well :) Stay tuned.
+
 This repository contains a little Swift app for iOS which just shows a "business quote of the day" with perfect quality for bullshit bingo :D
 
 The reason for this app to exist is purely educational because the endpoints used in the app are those from a backend which can be completely self deployed in Azure with Azure Functions. 
