@@ -8,6 +8,12 @@
 
 import UIKit
 import Foundation
+import HockeySDK
+
+
+enum MyError : Error {
+    case HockeyAppTestError
+}
 
 class ViewController: UIViewController {
 
@@ -20,6 +26,10 @@ class ViewController: UIViewController {
         
         let tapGR = UITapGestureRecognizer.init(target: self, action: #selector(ViewController.fetchQuote))
         view.addGestureRecognizer(tapGR)
+        
+//        let swipeGR = UISwipeGestureRecognizer.init(target: self, action: #selector(ViewController.crash))
+//        swipeGR.direction = .right
+//        view.addGestureRecognizer(swipeGR)
         
         self.quoteLabel.text = " ... "
         
@@ -86,6 +96,9 @@ class ViewController: UIViewController {
                         
                     }
                     print("SUCCESS: fetched quote")
+                    
+                    let metricsManager = BITHockeyManager.shared().metricsManager
+                    metricsManager.trackEvent(withName: "quoted-fetched-by-user-on-tap")
                 }
             }
         }
@@ -103,6 +116,13 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3) {
             self.quoteLabel.alpha = 1
         }
+    }
+    
+    func crash () throws {
+        let metricsManager = BITHockeyManager.shared().metricsManager
+        metricsManager.trackEvent(withName: "crash-triggered-on-swipe-by-user")
+        
+        throw MyError.HockeyAppTestError
     }
 
 }
