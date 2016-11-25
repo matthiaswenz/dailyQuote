@@ -25,7 +25,7 @@ namespace DailyQuote.Forms
 		}
 
 		private async Task FetchQuoteAsync()
-		{			
+		{
             var httpClient = new HttpClient(new NativeMessageHandler());
 			var json = await httpClient.GetStringAsync("https://myrandomfuncs.azurewebsites.net/api/BullshitBingo?maxlength=180");
 			var quoteResult = JsonConvert.DeserializeObject<QuoteResult>(json);
