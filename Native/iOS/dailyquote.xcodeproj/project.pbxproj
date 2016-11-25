@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2063693F1DE86D570003B318 /* MobileCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2063693C1DE86D570003B318 /* MobileCenter.framework */; };
+		206369401DE86D570003B318 /* MobileCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2063693D1DE86D570003B318 /* MobileCenterAnalytics.framework */; };
+		206369411DE86D570003B318 /* MobileCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2063693E1DE86D570003B318 /* MobileCenterCrashes.framework */; };
 		207DA4961DBD5EEC0001F6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207DA4951DBD5EEC0001F6CB /* AppDelegate.swift */; };
 		207DA4981DBD5EEC0001F6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207DA4971DBD5EEC0001F6CB /* ViewController.swift */; };
 		207DA49B1DBD5EEC0001F6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207DA4991DBD5EEC0001F6CB /* Main.storyboard */; };
 		207DA49D1DBD5EEC0001F6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207DA49C1DBD5EEC0001F6CB /* Assets.xcassets */; };
 		207DA4A01DBD5EEC0001F6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207DA49E1DBD5EEC0001F6CB /* LaunchScreen.storyboard */; };
-		20FA5B281DD4DB1A00C28A12 /* HockeySDK.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = 20FA5B271DD4DB1A00C28A12 /* HockeySDK.embeddedframework */; };
-		20FA5B2C1DD4DBE500C28A12 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FA5B2B1DD4DBE500C28A12 /* HockeySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2063693C1DE86D570003B318 /* MobileCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCenter.framework; path = Frameworks/MobileCenter.framework; sourceTree = "<group>"; };
+		2063693D1DE86D570003B318 /* MobileCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCenterAnalytics.framework; path = Frameworks/MobileCenterAnalytics.framework; sourceTree = "<group>"; };
+		2063693E1DE86D570003B318 /* MobileCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCenterCrashes.framework; path = Frameworks/MobileCenterCrashes.framework; sourceTree = "<group>"; };
 		207DA4921DBD5EEC0001F6CB /* dailyquote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dailyquote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207DA4951DBD5EEC0001F6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		207DA4971DBD5EEC0001F6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +28,6 @@
 		207DA49C1DBD5EEC0001F6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		207DA49F1DBD5EEC0001F6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		207DA4A11DBD5EEC0001F6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20FA5B271DD4DB1A00C28A12 /* HockeySDK.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HockeySDK.embeddedframework; path = "HockeySDK-iOS/HockeySDK.embeddedframework"; sourceTree = "<group>"; };
-		20FA5B2B1DD4DBE500C28A12 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20FA5B2C1DD4DBE500C28A12 /* HockeySDK.framework in Frameworks */,
+				206369401DE86D570003B318 /* MobileCenterAnalytics.framework in Frameworks */,
+				206369411DE86D570003B318 /* MobileCenterCrashes.framework in Frameworks */,
+				2063693F1DE86D570003B318 /* MobileCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +47,9 @@
 		207DA4891DBD5EEC0001F6CB = {
 			isa = PBXGroup;
 			children = (
-				20FA5B271DD4DB1A00C28A12 /* HockeySDK.embeddedframework */,
+				2063693C1DE86D570003B318 /* MobileCenter.framework */,
+				2063693D1DE86D570003B318 /* MobileCenterAnalytics.framework */,
+				2063693E1DE86D570003B318 /* MobileCenterCrashes.framework */,
 				207DA4941DBD5EEC0001F6CB /* dailyquote */,
 				207DA4931DBD5EEC0001F6CB /* Products */,
 				20FA5B2A1DD4DBE400C28A12 /* Frameworks */,
@@ -74,7 +80,6 @@
 		20FA5B2A1DD4DBE400C28A12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20FA5B2B1DD4DBE500C28A12 /* HockeySDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,7 +94,6 @@
 				207DA48E1DBD5EEC0001F6CB /* Sources */,
 				207DA48F1DBD5EEC0001F6CB /* Frameworks */,
 				207DA4901DBD5EEC0001F6CB /* Resources */,
-				20FA5B261DD4DB0300C28A12 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -107,7 +111,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = byteroyal;
 				TargetAttributes = {
 					207DA4911DBD5EEC0001F6CB = {
@@ -142,28 +146,11 @@
 			files = (
 				207DA4A01DBD5EEC0001F6CB /* LaunchScreen.storyboard in Resources */,
 				207DA49D1DBD5EEC0001F6CB /* Assets.xcassets in Resources */,
-				20FA5B281DD4DB1A00C28A12 /* HockeySDK.embeddedframework in Resources */,
 				207DA49B1DBD5EEC0001F6CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		20FA5B261DD4DB0300C28A12 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		207DA48E1DBD5EEC0001F6CB /* Sources */ = {
@@ -215,6 +202,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -265,6 +253,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -297,7 +286,8 @@
 				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = dailyquote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -316,7 +306,8 @@
 				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = dailyquote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;

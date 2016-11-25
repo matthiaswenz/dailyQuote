@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-import HockeySDK
+import MobileCenterAnalytics
 
 
 enum MyError : Error {
@@ -26,10 +26,10 @@ class ViewController: UIViewController {
         
         let tapGR = UITapGestureRecognizer.init(target: self, action: #selector(ViewController.fetchQuote))
         view.addGestureRecognizer(tapGR)
-        
-//        let swipeGR = UISwipeGestureRecognizer.init(target: self, action: #selector(ViewController.crash))
-//        swipeGR.direction = .right
-//        view.addGestureRecognizer(swipeGR)
+
+        let swipeGR = UISwipeGestureRecognizer.init(target: self, action: #selector(ViewController.crash))
+        swipeGR.direction = .right
+        view.addGestureRecognizer(swipeGR)
         
         self.quoteLabel.text = " ... "
         
@@ -97,8 +97,7 @@ class ViewController: UIViewController {
                     }
                     print("SUCCESS: fetched quote")
                     
-                    let metricsManager = BITHockeyManager.shared().metricsManager
-                    metricsManager.trackEvent(withName: "quoted-fetched-by-user-on-tap")
+                    MSAnalytics.trackEvent("quoted-fetched-by-user-on-tap")
                 }
             }
         }
@@ -119,8 +118,7 @@ class ViewController: UIViewController {
     }
     
     func crash () throws {
-        let metricsManager = BITHockeyManager.shared().metricsManager
-        metricsManager.trackEvent(withName: "crash-triggered-on-swipe-by-user")
+        MSAnalytics.trackEvent("crash-triggered-on-swipe-by-user")
         
         throw MyError.HockeyAppTestError
     }
