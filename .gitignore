@@ -6,9 +6,6 @@
 build/
 DerivedData/
 
-## Frameworks
-Frameworks/
-
 ## Various settings
 *.pbxuser
 !default.pbxuser
